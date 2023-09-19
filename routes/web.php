@@ -14,8 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('body');
+    return view('table1');
 });
+
+Route::get('/table2', function () {
+    return view('table2');
+});
+
+Route::get('/table3', function () {
+    return view('table3');
+});
+
 
 Route::get('/form', function(){
     return view('form');
